@@ -18,7 +18,7 @@ phases:
       - mv target/java-repo-1.0.jar .
       - unzip java-repo-1.0.jar
       - rm -rf target tst src buildspec.yml pom.xml java-repo-1.0.jar
-      - aws cloudformation package --template template.yml --s3-bucket $S3_BUCKET --output-template template-export.yml
+      - aws cloudformation package --template template.yml --s3-bucket $S3_BUCKET --output-template-file template-export.yml
   post_build:
     commands:
       # Do not remove this statement. This command is required for AWS CodeStar projects.
