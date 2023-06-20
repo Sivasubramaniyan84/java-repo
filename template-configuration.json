@@ -1,0 +1,6 @@
+{
+  "Tags":
+  {
+    "javarepo:projectArn":"arn:$PARTITION$:javarepo:$AWS_REGION$:$ACCOUNT_ID$:project/$PROJECT_ID$"
+  }
+}
