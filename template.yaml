@@ -12,8 +12,6 @@ Resources:
     Type: AWS::Lambda::Function
     Properties:
       Code:
-        S3Bucket: siva-lambda-1
-        S3Key: JavaRepoLambda.zip
       FunctionName: JavaRepo
       Handler: sample.Handler
       MemorySize: 128
