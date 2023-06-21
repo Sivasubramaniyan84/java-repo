@@ -40,12 +40,3 @@ Resources:
                 Action:
                   - logs:*
                 Resource: arn:aws:logs:*:*:*
-        - PolicyName: getAndDeleteObjects
-          PolicyDocument:
-            Version: '2012-10-17'
-            Statement:
-              - Effect: Allow
-                Action:
-                  - s3:GetObject
-                  - s3:DeleteObject
-                Resource:  !Sub 'arn:aws:s3:::${BucketName}/*'
