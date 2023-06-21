@@ -8,15 +8,15 @@ Resources:
     Type: AWS::S3::Bucket
     Properties:
       BucketName: !Ref BucketName
-  JavaRepoLambda:
-    Type: AWS::Lambda::Function
-    Properties:
-      Code:
-      FunctionName: JavaRepo
-      Handler: sample.Handler
-      MemorySize: 128
-      Runtime: java11
-      Role: !GetAtt ProcessingLambdaExecutionRole.Arn
+  #JavaRepoLambda:
+    #Type: AWS::Lambda::Function
+    #Properties:
+      #Code:
+      #FunctionName: JavaRepo
+      #Handler: sample.Handler
+      #MemorySize: 128
+      #Runtime: java11
+      #Role: !GetAtt ProcessingLambdaExecutionRole.Arn
 
 
   ProcessingLambdaExecutionRole:
