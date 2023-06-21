@@ -5,7 +5,7 @@ phases:
     runtime-versions:
       java: corretto17
     commands:
-      # Upgrade AWS CLI to the latest version
+      #  Upgrade AWS CLI to the latest version
       - pip install --upgrade awscli
   pre_build:
     commands:
