@@ -73,7 +73,7 @@ Resources:
               Bucket: event.Records[0].s3.bucket.name,
               Key: event.Records[0].s3.object.key
              };
-            // get file from s3
+            //  get file from s3
              const data = await s3.getObject(params).promise();
              console.log(data);
             // delete file from s3 and return promise
